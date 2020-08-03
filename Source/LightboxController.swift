@@ -245,7 +245,11 @@ open class LightboxController: UIViewController {
       pageViews.append(pageView)
     }
 
-    configureLayout(view.bounds.size)
+    guard let window = UIApplication.shared.delegate?.window else { return }
+
+    configureLayout(
+        window?.bounds.size ?? view.window?.bounds.size ?? .zero
+    )
   }
 
   func reconfigurePagesForPreload() {
