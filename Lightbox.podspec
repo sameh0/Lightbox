@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = "Lightbox"
   s.summary          = "A a convenient and easy to use image viewer for your iOS app, packed with all the features you expect"
-  s.version          = "2.3.0"
+  s.version          = "2.4.2"
   s.homepage         = "https://github.com/hyperoslo/Lightbox"
   s.license          = 'MIT'
   s.author           = { "Hyper Interaktiv AS" => "ios@hyper.no" }
@@ -14,5 +14,4 @@ Pod::Spec.new do |s|
 
   s.frameworks = 'UIKit', 'AVFoundation', 'AVKit'
 
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.2' }
 end
